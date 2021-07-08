@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 28
@@ -25,6 +26,16 @@ android {
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
+    }
+
+    task installArchives(type: Upload) {
+        description "Installs the artifacts to the local Maven repository."
+        repositories.mavenInstaller {
+            configuration = configurations.default
+            pom.groupId = 'jmercadot'
+            pom.artifactId = 'GSFlipperObject'
+            pom.version = '1.0.0'
+        }
     }
 
 }
