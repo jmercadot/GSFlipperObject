@@ -1,0 +1,3 @@
+rootProject.name = "GSFlipperObject"
+include ':app'
+include ':gsflipperobject'

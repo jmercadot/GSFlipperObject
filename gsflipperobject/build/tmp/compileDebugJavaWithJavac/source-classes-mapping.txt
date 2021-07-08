@@ -1,0 +1,5 @@
+com/baz/cobranzatardia/gsflipperobject/BuildConfig.java
+ com.baz.cobranzatardia.gsflipperobject.BuildConfig
+com/baz/cobranzatardia/gsflipperobject/GSFlipperObject.java
+ com.baz.cobranzatardia.gsflipperobject.GSFlipperObject
+ com.baz.cobranzatardia.gsflipperobject.GSFlipperObject$1
